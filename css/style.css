@@ -1,0 +1,344 @@
+* {
+  /* HTML5 display-role reset for older browsers */ }
+  * html, * body, * div, * span, * applet, * object, * iframe, * h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre, * a, * abbr, * acronym, * address, * big, * cite, * code, * del, * dfn, * em, * img, * ins, * kbd, * q, * s, * samp, * small, * strike, * strong, * sub, * sup, * tt, * var, * b, * u, * i, * center, * dl, * dt, * dd, * ol, * ul, * li, * fieldset, * form, * label, * legend, * table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td, * article, * aside, * canvas, * details, * embed, * figure, * figcaption, * footer, * header, * hgroup, * menu, * nav, * output, * ruby, * section, * summary, * time, * mark, * audio, * video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  * article, * aside, * details, * figcaption, * figure, * footer, * header, * hgroup, * menu, * nav, * section {
+    display: block; }
+  * body {
+    line-height: 1; }
+  * ol, * ul {
+    list-style: none; }
+  * blockquote, * q {
+    quotes: none; }
+  * blockquote:before, * blockquote:after {
+    content: '';
+    content: none; }
+  * q:before, * q:after {
+    content: '';
+    content: none; }
+  * table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.content-holder {
+  width: 100%;
+  max-width: 489px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; }
+  .content-holder .header-wrap {
+    width: 100%;
+    justify-content: space-between; }
+    .content-holder .header-wrap .header-left {
+      float: left;
+      width: 29%; }
+      .content-holder .header-wrap .header-left .img-wrap {
+        margin-top: -4px; }
+    .content-holder .header-wrap .header-right {
+      float: right;
+      width: 71%; }
+      .content-holder .header-wrap .header-right span, .content-holder .header-wrap .header-right p {
+        display: block; }
+      .content-holder .header-wrap .header-right .span-name {
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #333333;
+        padding-top: 4px; }
+      .content-holder .header-wrap .header-right .span-profession {
+        font-size: 12px;
+        font-family: Arial;
+        color: #808080;
+        padding-top: 7px; }
+      .content-holder .header-wrap .header-right p {
+        font-size: 14px;
+        font-family: Arial;
+        color: #333333;
+        line-height: 1.4;
+        padding-top: 18px;
+        position: relative; }
+      .content-holder .header-wrap .header-right p::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: -52px;
+        width: 370px;
+        height: 54px;
+        z-index: -10;
+        background: #fffbc8;
+        border-radius: 5px;
+        border: 1px solid #cecabf; }
+  .content-holder .services-wrap {
+    width: 100%;
+    margin-top: -5px;
+    display: block; }
+    .content-holder .services-wrap .table-wrap {
+      float: right;
+      width: 100%;
+      max-width: 320px; }
+      .content-holder .services-wrap .table-wrap .span-wrap .span-services {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        font-family: Arial;
+        color: #333;
+        margin-right: 32px; }
+      .content-holder .services-wrap .table-wrap .services-table {
+        margin-top: 8px;
+        width: 100%;
+        padding-top: 11px;
+        padding-bottom: 14px;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
+        .content-holder .services-wrap .table-wrap .services-table .services-table-left {
+          float: left;
+          width: 70%; }
+          .content-holder .services-wrap .table-wrap .services-table .services-table-left span {
+            display: block;
+            font-size: 13px;
+            color: #333333;
+            font-family: Arial;
+            padding-left: 8px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            position: relative;
+            margin-top: 2px; }
+          .content-holder .services-wrap .table-wrap .services-table .services-table-left span:nth-child(1)::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 100%;
+            background: #b1e19b;
+            -webkit-border-top-right-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            z-index: -5;
+            border-left: 1px solid #83b26d; }
+          .content-holder .services-wrap .table-wrap .services-table .services-table-left span:nth-child(2)::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 54px;
+            height: 100%;
+            background: #ace2f8;
+            -webkit-border-top-right-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            z-index: -5;
+            border-left: 1px solid #7eb4ca; }
+          .content-holder .services-wrap .table-wrap .services-table .services-table-left span:nth-child(3)::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 37px;
+            height: 100%;
+            background: #ace2f8;
+            -webkit-border-top-right-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            z-index: -5;
+            border-left: 1px solid #7eb4ca; }
+        .content-holder .services-wrap .table-wrap .services-table .services-table-right {
+          float: right;
+          width: 30%; }
+          .content-holder .services-wrap .table-wrap .services-table .services-table-right span {
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            font-family: Arial;
+            padding: 6px;
+            padding-left: 8px;
+            margin-top: 2px;
+            font-weight: bold; }
+    .content-holder .services-wrap .conlusion-table {
+      width: 100%;
+      max-width: 320px; }
+      .content-holder .services-wrap .conlusion-table .conlusion-table-left {
+        width: 70%;
+        float: left; }
+        .content-holder .services-wrap .conlusion-table .conlusion-table-left span {
+          font-size: 16px;
+          font-weight: bold;
+          font-family: Arial;
+          color: #333;
+          display: block;
+          padding-top: 14px; }
+      .content-holder .services-wrap .conlusion-table .conlusion-table-right {
+        width: 30%;
+        float: right; }
+        .content-holder .services-wrap .conlusion-table .conlusion-table-right span {
+          font-size: 16px;
+          font-weight: bold;
+          font-family: Arial;
+          color: #333;
+          display: block;
+          text-align: right;
+          padding-top: 14px;
+          padding-left: -2px;
+          text-align: center; }
+  .content-holder .reviews-wrap {
+    width: 100%;
+    display: block;
+    margin-top: 21px; }
+    .content-holder .reviews-wrap .reviews-top {
+      width: 100%; }
+      .content-holder .reviews-wrap .reviews-top .reviews-nav {
+        float: left; }
+        .content-holder .reviews-wrap .reviews-top .reviews-nav li {
+          float: left;
+          margin-left: 9px; }
+          .content-holder .reviews-wrap .reviews-top .reviews-nav li:first-child {
+            margin-left: 0; }
+          .content-holder .reviews-wrap .reviews-top .reviews-nav li .last-reviews {
+            float: left;
+            font-size: 16px;
+            font-family: Arial;
+            font-weight: bold;
+            color: #333; }
+          .content-holder .reviews-wrap .reviews-top .reviews-nav li .all-reviews {
+            float: left;
+            font-size: 14px;
+            font-family: Arial;
+            color: #005da1; }
+      .content-holder .reviews-wrap .reviews-top .stats-nav {
+        float: right; }
+        .content-holder .reviews-wrap .reviews-top .stats-nav li {
+          float: left;
+          margin-left: 18px; }
+          .content-holder .reviews-wrap .reviews-top .stats-nav li:first-child {
+            margin-left: 0; }
+          .content-holder .reviews-wrap .reviews-top .stats-nav li img {
+            margin-right: 4px;
+            vertical-align: middle; }
+          .content-holder .reviews-wrap .reviews-top .stats-nav li span {
+            font-size: 12px;
+            font-family: Arial;
+            color: #333; }
+    .content-holder .reviews-wrap .reviews-bottom {
+      width: 100%; }
+      .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block {
+        width: 100%;
+        margin-top: 14px; }
+        .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block .reviewer-name {
+          font-size: 14px;
+          font-family: Arial;
+          font-weight: bold;
+          color: #333;
+          display: inline-block; }
+        .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block .time {
+          color: #808080;
+          font-size: 11px;
+          font-family: Arial;
+          padding-left: 4px;
+          display: inline-block; }
+        .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block .message-wrap {
+          position: relative;
+          width: 100%;
+          max-width: 450px;
+          padding: 15px 20px 13px 20px;
+          box-sizing: border-box;
+          background: #f2fbff;
+          border: 1px solid #cfcfcf;
+          margin-top: 11px; }
+          .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block .message-wrap .triangle {
+            position: absolute;
+            left: 22px;
+            top: -12px; }
+          .content-holder .reviews-wrap .reviews-bottom .review-block-wrap .review-block .message-wrap p {
+            font-size: 14px;
+            font-family: Arial;
+            color: #333;
+            line-height: 1.4;
+            text-align: justify; }
+
+.footer-holder {
+  width: 100%;
+  max-width: 489px;
+  display: block;
+  margin: 0 auto;
+  padding: 30px 20px 35px 20px;
+  box-sizing: border-box;
+  background: #f2f2f2; }
+  .footer-holder .form-wrap {
+    width: 100%; }
+    .footer-holder .form-wrap form input#in {
+      width: 100%;
+      height: 66px;
+      display: block;
+      padding-left: 10px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      border-radius: 3px;
+      margin-top: 2px;
+      border: 1px solid #a9a9a9; }
+    .footer-holder .form-wrap form button#public {
+      font-weight: bold;
+      width: 100%;
+      max-width: 280px;
+      height: 45px;
+      background: #fdd639;
+      font-size: 16px;
+      font-family: Arial;
+      color: #333;
+      border: 0;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 22px;
+      display: block; }
+
+@media all and (max-width: 507px) {
+  .content-holder {
+    padding: 10px; }
+
+  .footer-holder {
+    padding: 10px; } }
+@media all and (max-width: 507px) {
+  .content-holder {
+    padding: 10px; }
+
+  .footer-holder {
+    padding: 10px; } }
+@media all and (max-width: 474px) {
+  .content-holder .header-wrap .header-left {
+    width: 100%; }
+  .content-holder .header-wrap .header-right {
+    width: 100%; }
+    .content-holder .header-wrap .header-right p {
+      padding-left: 10px; }
+    .content-holder .header-wrap .header-right p::after {
+      width: 100%;
+      left: 0;
+      height: 100%; }
+
+  .services-wrap {
+    padding-top: 30px; } }
+@media all and (max-width: 370px) {
+  .reviews-wrap .reviews-top .stats-nav {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

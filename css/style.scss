@@ -1,0 +1,402 @@
+@import 'reset';
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-holder{
+    width: 100%;
+    max-width: 489px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    .header-wrap{
+        width: 100%;
+        justify-content: space-between;
+        .header-left{
+           float: left;
+            width: 29%;
+            .img-wrap{
+                margin-top: -4px;
+            }
+        } 
+        .header-right{
+           float: right;
+            width: 71%;
+            span, p{
+                display: block;
+            }
+            .span-name{
+                font-size: 16px;
+                font-family: Arial;
+                font-weight: bold;
+                color: #333333;
+                padding-top: 4px;
+            }
+            .span-profession{
+                font-size: 12px;
+                font-family: Arial;
+                color: #808080;  
+                padding-top: 7px;
+            }
+            p{
+                font-size: 14px;
+                font-family: Arial;
+                color: #333333;
+                line-height: 1.4;
+                padding-top: 18px;
+                position: relative;
+            }
+            p::after{
+                content: "";
+                position: absolute;
+                top: 9px;
+                left: -52px;
+                width: 370px;
+                height: 54px;
+                z-index: -10;
+                background: #fffbc8;
+                border-radius: 5px;
+                border: 1px solid #cecabf;
+            }
+        }
+    }
+    .services-wrap{
+        width: 100%;
+        margin-top: -5px;
+        display: block;
+        .table-wrap{ 
+            float: right;
+            width: 100%;
+            max-width: 320px;
+            .span-wrap{
+                .span-services{
+                    display: block;
+                    text-align: right;
+                    font-size: 13px;
+                    font-family: Arial;
+                    color: #333;
+                    margin-right: 32px;
+                }
+            }
+            .services-table{
+                margin-top: 8px;
+                width: 100%;
+                padding-top: 11px;
+                padding-bottom: 14px;
+                border-top: 1px solid #cccccc; 
+                border-bottom: 1px solid #cccccc; 
+                .services-table-left{
+                    float: left;
+                    width: 70%;
+                    span{
+                        display: block;
+                        font-size: 13px;
+                        color: #333333;
+                        font-family: Arial;
+                        padding-left: 8px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        position: relative;
+                        margin-top: 2px;
+
+                    }
+                    span:nth-child(1)::after{
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        width: 220px;
+                        height: 100%;
+                        background: #b1e19b;
+                        -webkit-border-top-right-radius: 3px;
+                        -webkit-border-bottom-right-radius: 3px;
+                        -moz-border-radius-topright: 3px;
+                        -moz-border-radius-bottomright: 3px;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        z-index: -5;
+                        border-left: 1px solid #83b26d;
+                    }
+                    span:nth-child(2)::after{
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        width: 54px;
+                        height: 100%;
+                        background: #ace2f8;
+                        -webkit-border-top-right-radius: 3px;
+                        -webkit-border-bottom-right-radius: 3px;
+                        -moz-border-radius-topright: 3px;
+                        -moz-border-radius-bottomright: 3px;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        z-index: -5;
+                        border-left: 1px solid #7eb4ca;
+                    }
+                    span:nth-child(3)::after{
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        width: 37px;
+                        height: 100%;
+                        background: #ace2f8;
+                        -webkit-border-top-right-radius: 3px;
+                        -webkit-border-bottom-right-radius: 3px;
+                        -moz-border-radius-topright: 3px;
+                        -moz-border-radius-bottomright: 3px;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        z-index: -5;
+                        border-left: 1px solid #7eb4ca;
+                    }
+                }
+                .services-table-right{
+                    float: right;
+                    width: 30%;
+                    span{
+                        display: block;
+                        text-align: center;
+                        font-size: 13px;
+                        color: #333333;
+                        font-family: Arial;
+                        padding: 6px;
+                        padding-left: 8px;
+                        margin-top: 2px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .conlusion-table{
+            width: 100%;
+            max-width: 320px;
+            .conlusion-table-left{
+                width: 70%;
+                float: left;
+                span{
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: Arial;
+                    color: #333;
+                    display: block;
+                    padding-top: 14px;
+                }
+            }
+            .conlusion-table-right{
+                width: 30%;
+                float: right;
+                span{
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: Arial;
+                    color: #333;
+                    display: block;
+                    text-align: right;
+                    padding-top: 14px;
+                    padding-left: -2px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .reviews-wrap{
+        width: 100%;
+        display: block;
+        margin-top: 21px;
+        .reviews-top{
+            width: 100%;
+            .reviews-nav{
+                float: left;
+                li{
+                    float: left;
+                    margin-left: 9px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                   .last-reviews{
+                        float: left;
+                        font-size: 16px;
+                        font-family: Arial;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                    .all-reviews{
+                        float: left;
+                        font-size: 14px;
+                        font-family: Arial;
+                        color: #005da1;
+                    } 
+                }
+            }
+            .stats-nav{
+                float: right;
+                li{
+                    float: left;
+                    margin-left: 18px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    img{
+                        margin-right: 4px;
+                        vertical-align: middle;
+                    }
+                    span{
+                        font-size: 12px;
+                        font-family: Arial;
+                        color: #333;
+                    }
+                    
+                }
+            }
+            
+        }
+        .reviews-bottom{
+            width: 100%;
+            .review-block-wrap{
+                .review-block{
+                    width: 100%;
+                    margin-top: 14px;
+                    .reviewer-name{
+                        font-size: 14px;
+                        font-family: Arial;
+                        font-weight: bold;
+                        color: #333;
+                        display: inline-block;
+                    }
+                    .time{
+                        color: #808080;
+                        font-size: 11px;
+                        font-family: Arial;
+                        padding-left: 4px;
+                        display: inline-block;
+                    }
+                    .message-wrap{
+                        .triangle{
+                            position: absolute;
+                            left: 22px;
+                            top: -12px;
+                        }
+                        position: relative;
+                        width: 100%;
+                        max-width: 450px;
+                        padding: 15px 20px 13px 20px;
+                        box-sizing: border-box;
+                        background: #f2fbff;
+                        border: 1px solid #cfcfcf;
+                        margin-top: 11px;
+                        p{
+                            font-size: 14px;
+                            font-family: Arial;
+                            color: #333;
+                            line-height: 1.4;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-holder{
+    width: 100%;
+    max-width: 489px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 20px 35px 20px;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    .form-wrap{
+        width: 100%;
+        form{
+            input#in{
+                width: 100%;
+                height: 66px;
+                display: block;
+                padding-left: 10px;
+                box-sizing: border-box;
+                margin: 0 auto;
+                border-radius: 3px;
+                margin-top: 2px;
+                border: 1px solid #a9a9a9;
+            }
+            button#public{
+                font-weight: bold;
+                width: 100%;
+                max-width: 280px;
+                height: 45px;
+                background: #fdd639;
+                font-size: 16px;
+                font-family: Arial;
+                color: #333;
+                border: 0;
+                border-radius: 25px;
+                cursor: pointer;
+                margin: 0 auto;
+                margin-top: 22px;
+                display: block;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 507px) {
+    .content-holder{
+        padding: 10px;
+        
+    }
+    .footer-holder{
+        padding: 10px;
+    }
+    
+}
+
+@media all and (max-width: 507px) {
+    .content-holder{
+        padding: 10px;
+        
+    }
+    .footer-holder{
+        padding: 10px;
+    }
+    
+}
+
+@media all and (max-width: 474px) {
+    .content-holder{
+        .header-wrap{
+            .header-left{
+                width: 100%;
+            }
+            .header-right{
+                width: 100%;
+                p{
+                    padding-left: 10px;
+                }
+                 p::after{
+                     width: 100%;
+                     left: 0;
+                     height: 100%;
+                 }
+            }
+        }
+        
+    }  
+    .services-wrap{
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .reviews-wrap{
+        .reviews-top{
+            .stats-nav{
+                width: 100%;
+            }
+        }
+    }
+}
