@@ -1,5 +1,10 @@
 @import 'reset';
 
+@font-face {
+    font-family: PTSans-Bold; 
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -19,7 +24,7 @@
            float: left;
             width: 29%;
             .img-wrap{
-                margin-top: -4px;
+                margin-top: -8px;
             }
         } 
         .header-right{
@@ -210,6 +215,7 @@
         margin-top: 21px;
         .reviews-top{
             width: 100%;
+            margin-top: 25px;
             .reviews-nav{
                 float: left;
                 li{
@@ -295,6 +301,7 @@
                             color: #333;
                             line-height: 1.4;
                             text-align: justify;
+                            word-spacing: 0;
                         }
                     }
                 }
@@ -307,6 +314,7 @@
     max-width: 489px;
     display: block;
     margin: 0 auto;
+    margin-top: 3px;
     padding: 30px 20px 35px 20px;
     box-sizing: border-box;
     background: #f2f2f2;
@@ -321,7 +329,6 @@
                 box-sizing: border-box;
                 margin: 0 auto;
                 border-radius: 3px;
-                margin-top: 2px;
                 border: 1px solid #a9a9a9;
             }
             button#public{
@@ -331,14 +338,16 @@
                 height: 45px;
                 background: #fdd639;
                 font-size: 16px;
-                font-family: Arial;
+                font-family: PTSans-Bold;
                 color: #333;
                 border: 0;
                 border-radius: 25px;
                 cursor: pointer;
                 margin: 0 auto;
-                margin-top: 22px;
+                margin-top: 19px;
                 display: block;
+                padding-left: 1px;
+                box-sizing: border-box;
             }
         }
     }

@@ -7,6 +7,23 @@ $(document).ready(function(){
           addCommentToDOM(comments[i]);
       }
    }
+   let flag = false;
+   $(document).on('keydown', function(event){
+       if ( event.key == "Control" ) flag = true;
+       if ( event.key == "Enter" && flag ) {
+          let input_value = $('#in').val();
+           if ( input_value.length > 3 ) {
+              let comment = {
+                 time: Math.floor(Date.now()/1000),
+                 message: input_value
+              } 
+              comments.push(comment);
+              addCommentToDOM(comment);
+              $('#in').val('');
+           } else alert('Введите больше 3-ох символов') 
+       }
+   })
+    
    $('#public').on('click', function(){
        let input_value = $('#in').val();
        if ( input_value.length > 3 ) {
@@ -15,7 +32,8 @@ $(document).ready(function(){
              message: input_value
           } 
           comments.push(comment);
-          addCommentToDOM(comment)
+          addCommentToDOM(comment);
+          $('#in').val('');
        } else alert('Введите больше 3-ох символов')
    })
     
