@@ -290,8 +290,17 @@
   box-sizing: border-box;
   background: #f2f2f2; }
   .footer-holder .form-wrap {
+    position: relative;
     width: 100%; }
-    .footer-holder .form-wrap form input#in {
+    .footer-holder .form-wrap .error {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      color: red;
+      font-family: Arial;
+      font-size: 13px;
+      display: none; }
+    .footer-holder .form-wrap input#in {
       width: 100%;
       height: 66px;
       display: block;
@@ -300,7 +309,7 @@
       margin: 0 auto;
       border-radius: 3px;
       border: 1px solid #a9a9a9; }
-    .footer-holder .form-wrap form button#public {
+    .footer-holder .form-wrap button#public {
       font-weight: bold;
       width: 100%;
       max-width: 280px;
