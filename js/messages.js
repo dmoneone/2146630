@@ -1,9 +1,14 @@
 $(document).ready(function(){
    let flag = false;
+   
+   function inputValidate(value){
+       if ( value.length > 3 ) return true;
+       else return false;
+   }
     
    function addComment(){
        let input_value = $('#in').val();
-       if ( input_value.length > 3 ) {
+       if ( inputValidate(input_value) == true ) {
           let comment = {
              time: Math.floor(Date.now()/1000),
              message: input_value
@@ -39,7 +44,10 @@ $(document).ready(function(){
     
    $(document).on('keydown', function(event){
        if ( event.key == "Control" ) flag = true;
-       if ( event.key == "Enter" && flag ) addComment();
+       if ( event.key == "Enter" && flag ) {
+           addComment();
+           flag = fasle;
+       }
    })
     
    $('#public').on('click', addComment)                                                                                                      
